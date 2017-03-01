@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Home</title>
+    <link href="LIBS\css\bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary JavaScript plugins) -->
+    <script src="LIBS\js\bootstrap.js"></script>
+    <!-- Custom Theme files -->
+    <link href="CSS\style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="University Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+         Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	<script src="LIBS\js\jquery.min.js"></script>
+	<script src="LIBS\js\bootstrap.js"></script>
+	<link rel="stylesheet" href="CSS\style.css"/>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <div class="header">
+            <div class="top-menu">
+                <span class="menu"></span>
+                <ul class="navig">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="HTML\about.html">About</a></li>
+                    <li><a href="HTML\program.html">Programs</a></li>
+                    <li><a href="HTML\blog.html">Blog</a></li>
+                    <li><a href="HTML\gallery.html">Gallery</a></li>
+                    <li><a href="HTML\contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div id="container">
+                <img class="slides" src="IMAGES\vjti.jpg" />
+                <img class="slides" src="IMAGES\cc.jpg" />
+                <img class="slides" src="IMAGES\5.jpg" />
+                <img class="slides" src="IMAGES\h2.jpg" />
+                <img class="slides" src="IMAGES\04.jpg" />
+            </div>
+        </div>
+        <!-- script-for-menu -->
+    </div>
+    <!-- script-for-menu -->
+    <div class="footer">
+        <div class="container">
+            <div class="ftr-sec">
+                <div class="col-md-4 ftr-grid3">
+                    <h3>Important Links</h3>
+                    <ul>
+                        <li><a href="index.html"><span></span>Home</a></li>
+                        <li><a href="HTML\about.html"><span></span>About</a></li>
+                        <li><a href="HTML\program.html"><span></span>Programs</a></li>
+                        <li><a href="HTML\blog.html"><span></span>Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ftr-grid3">
+                    <ul>
+                        <br/>
+                        <br/>
+                        <li><a href="index.html"><span></span>Teachers</a></li>
+                        <li><a href="index.html"><span></span>Sign In</a></li>
+                        <li><a href="HTML\gallery.html"><span></span>Gallery</a></li>
+                        <li><a href="HTML\contact.html"><span></span>Contact</a></li>
+                    </ul>
+                </div>
+                <script>
+                    var index = 1;
+
+                    function plusindex(n) {
+                        index = index + 1;
+                        showindex(index);
+                    }
+                    showimage(1);
+
+                    function showimage(n) {
+
+                        var i;
+                        var x = document.getElementsByClassName("slides");
+                        if (n > x.length) {
+                            index = 1;
+                        }
+                        if (n > 1) {
+                            index = x.length;
+                        }
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        x[index - 1].style.display = "block";
+                    }
+
+                    autoSlide();
+
+                    function autoSlide() {
+                        var i;
+                        var x = document.getElementsByClassName("slides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        if (index > x.length) {
+                            index = 1;
+                        }
+                        x[index - 1].style.display = "block";
+                        index++;
+                        setTimeout(autoSlide, 2000);
+                    }
+                </script>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="copywrite">
+        <div class="container">
+            <p>Copyright &copy; 2017 MCA Department, VJTI. All rights reserved | Design by : VJTI Department (FYMCA)</p>
+        </div>
+    </div>
+    </div>
+    <!---->
+</body>
+
+</html>
